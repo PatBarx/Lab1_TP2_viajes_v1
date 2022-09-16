@@ -92,11 +92,11 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
+    <HasRelation name="tiene" source="Viaje" target="Vehiculo" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="Auto" target="Vehiculo"/>
     <IsRelation name="is" source="Camioneta" target="Vehiculo"/>
-    <HasRelation name="tiene" source="Viaje" target="Vehiculo" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <HasRelation name="tiene" source="Viaje" target="Ciudad" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
-    <HasRelation name="tiene" source="Vehiculo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="Camion" target="Vehiculo"/>
+    <HasRelation name="tiene" source="Vehiculo" target="Combustible" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="tiene" source="Viaje" target="Ciudad" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
   </ClassDiagramRelations>
 </ClassDiagram>
