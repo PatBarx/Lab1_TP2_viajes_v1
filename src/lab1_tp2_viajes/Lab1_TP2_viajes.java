@@ -9,6 +9,7 @@ public class Lab1_TP2_viajes {
         //instanciar Viaje en auto San Luis (RN7) --> Mercedes (RN 7)(Nafta)
         //instanciar VIaje en camioneta Naschel (RN141) ---> Villa Dolores (RN141)(GNC)
         
+        
     } 
     
 }
