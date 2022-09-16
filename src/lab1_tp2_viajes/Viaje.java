@@ -31,7 +31,14 @@ public class Viaje {
     }
     
     public double calcularCostPeaje(){
-        return 0; //simbolico
+        double valorPeaje = 100.00; 
+        if (vehiculo  instanceof Auto ){
+            valorPeaje = valorPeaje * peaje; 
+            } else {
+            valorPeaje = (valorPeaje + 50) * peaje;
+        }
+        
+        return valorPeaje;
     }
     
     public double calcularCostCombus(double pXKm,double r){
