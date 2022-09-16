@@ -27,25 +27,36 @@ public class Viaje {
         if (origen.getRuta()==destino.getRuta()){
         r= origen.getKm()-destino.getKm();}
         if(r<0){ r=r *(-1);}
-        return r; //simbolico
+        return r; 
     }
     
-    public double calcularCostPeaje(){
-        double valorPeaje = 100.00; 
-        if (vehiculo  instanceof Auto ){
-            valorPeaje = valorPeaje * peaje; 
-            } else {
+    public double calcularCostPeaje() {
+        double valorPeaje = 100.00;
+        if (vehiculo instanceof Camion) {
             valorPeaje = (valorPeaje + 50) * peaje;
+        } else {
+            valorPeaje = valorPeaje * peaje;
         }
-        
         return valorPeaje;
     }
     
-    public double calcularCostCombus(){
-        return 0; //simbolico
+    public double calcularCostCombus() {
+        if (vehiculo instanceof Auto) {
+            Auto au = (Auto) vehiculo;
+        } else if (vehiculo instanceof Camioneta) {
+            Camioneta neta = (Camioneta) vehiculo;
+        } else {
+            Camion mion = (Camion) vehiculo;
+        }
+        if (origen.getRuta() == destino.getRuta()) {
+            return calcularDistancia() * vehiculo.calcularCosto();
+        } else {
+            return vehiculo.calcularCosto() * distancia;
+        }
+
     }
     
-    public double calcularTotal(){
-        return 0; //simbolico
+    public double calcularTotal(){        
+        return 0; //vehiculo.calcularCostCombus() + 
     }
 }
