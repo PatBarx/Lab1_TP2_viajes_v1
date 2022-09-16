@@ -16,6 +16,7 @@ public class Lab1_TP2_viajes {
      */
     public static void main(String[] args) {
         //este es el proyecto
+        //este es otro comentario
     }
     
 }
