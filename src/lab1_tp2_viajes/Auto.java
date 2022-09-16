@@ -28,7 +28,9 @@ public class Auto extends Vehiculo{
     public void setCombustible(Combustible combustible) {
         this.combustible = combustible;
     }
-    
+
+   
+  
 
     @Override
     public double calcularCosto() {

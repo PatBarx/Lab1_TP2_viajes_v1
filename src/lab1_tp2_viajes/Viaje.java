@@ -26,7 +26,8 @@ public class Viaje {
         double r=0;
         if (origen.getRuta()==destino.getRuta()){
         r= origen.getKm()-destino.getKm();}
-        if(r<0){ r=r *(-1);}
+        if(r<0){ r=r *(-1);
+        }else{r=distancia;}
         return r; 
     }
     
@@ -48,11 +49,9 @@ public class Viaje {
         } else {
             Camion mion = (Camion) vehiculo;
         }
-        if (origen.getRuta() == destino.getRuta()) {
+        
             return calcularDistancia() * vehiculo.calcularCosto();
-        } else {
-            return vehiculo.calcularCosto() * distancia;
-        }
+        
 
     }
     

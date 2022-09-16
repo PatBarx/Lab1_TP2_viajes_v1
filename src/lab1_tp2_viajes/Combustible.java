@@ -13,7 +13,11 @@ public class Combustible {
     private String tipo;
     private double precio;
 
+   
+    
     public Combustible() {
+        
+       
     }
 
     public String getTipo() {
