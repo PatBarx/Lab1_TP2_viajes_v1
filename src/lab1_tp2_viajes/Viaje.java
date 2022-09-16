@@ -34,8 +34,8 @@ public class Viaje {
         return 0; //simbolico
     }
     
-    public double calcularCostCombus(){
-        return 0; //simbolico
+    public double calcularCostCombus(double pXKm,double r){
+            return  r * pXKm ;
     }
     
     public double calcularTotal(){
