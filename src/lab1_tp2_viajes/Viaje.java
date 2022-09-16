@@ -56,7 +56,13 @@ public class Viaje {
 
     }
     
-    public double calcularTotal(){        
-        return 0; //vehiculo.calcularCostCombus() + 
+    public double calcularTotal(){
+         if (origen.getRuta() == destino.getRuta()) {
+            return calcularDistancia()+ calcularCostCombus()+calcularCostPeaje();
+        } else {
+            return distancia+ calcularCostCombus()+calcularCostPeaje();
+        }
+        
+      
     }
 }
