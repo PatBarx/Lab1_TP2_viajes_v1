@@ -40,8 +40,7 @@ public class Viaje {
         return valorPeaje;
     }
     
-<<<<<<< HEAD
-    public double calcularCostCombus() {
+   public double calcularCostCombus() {
         if (vehiculo instanceof Auto) {
             Auto au = (Auto) vehiculo;
         } else if (vehiculo instanceof Camioneta) {
@@ -55,10 +54,6 @@ public class Viaje {
             return vehiculo.calcularCosto() * distancia;
         }
 
-=======
-    public double calcularCostCombus(double pXKm,double r){
-            return  r * pXKm ;
->>>>>>> a7832f17cd661472fce596c30915f3fd3edca16f
     }
     
     public double calcularTotal(){        
