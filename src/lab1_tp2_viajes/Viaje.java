@@ -23,7 +23,11 @@ public class Viaje {
     }
     
     public double calcularDistancia(){
-        return 0; //simbolico
+        double r=0;
+        if (origen.getRuta()==destino.getRuta()){
+        r= origen.getKm()-destino.getKm();}
+        if(r<0){ r=r *(-1);}
+        return r; //simbolico
     }
     
     public double calcularCostPeaje(){
