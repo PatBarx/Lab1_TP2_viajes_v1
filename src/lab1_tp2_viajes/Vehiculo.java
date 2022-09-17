@@ -30,5 +30,11 @@ public abstract class Vehiculo {
     public void setCombustible(Combustible combustible) {
         this.combustible = combustible;
     }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" + "marca=" + marca + ", patente=" + patente + ", combustible=" + combustible + '}';
+    }
+    
     public abstract double calcularCosto();
 }

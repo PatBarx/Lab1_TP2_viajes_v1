@@ -31,6 +31,11 @@ public class Ciudad {
     public void setRuta(int ruta) {
         this.ruta = ruta;
     }
+
+    @Override
+    public String toString() {
+        return "Ciudad{" + "nombre=" + nombre + ", km=" + km + ", ruta=" + ruta + '}';
+    }
     
     
 }
