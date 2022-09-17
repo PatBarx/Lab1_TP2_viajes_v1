@@ -37,6 +37,11 @@ public class Auto extends Vehiculo{
         double r = 7 * combustible.getPrecio()/100;
         return r;
     }
+
+    @Override
+    public String toString() {
+        return "Auto: " + '}';
+    }
      
     
     

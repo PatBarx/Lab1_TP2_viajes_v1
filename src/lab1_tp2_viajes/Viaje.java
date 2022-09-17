@@ -74,11 +74,13 @@ public class Viaje {
     public double calcularDistancia(){
         double r=0;
         if (origen.getRuta()==destino.getRuta()){
-        r= origen.getKm()-destino.getKm();}
-        if(r<0){ r=r *(-1);
-        distancia=r;
-        }else{distancia=r;}
-        return r; 
+        r= origen.getKm()-destino.getKm();
+        distancia= Math.abs(r);
+        } else {
+            r=distancia;
+        }        
+        // if(r<0){ r=r *(-1);
+        return Math.abs(r); 
     }
     
     public double calcularCostPeaje() {
@@ -111,8 +113,7 @@ public class Viaje {
     public double calcularTotal(){
          
             return calcularCostCombus()+calcularCostPeaje();
-        }
-        
+        }       
       
     }
 
