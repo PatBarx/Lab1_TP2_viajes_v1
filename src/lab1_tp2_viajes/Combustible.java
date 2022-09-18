@@ -38,7 +38,7 @@ public class Combustible {
 
     @Override
     public String toString() {
-        return "Combustible: " + " tipo= " + tipo + ", precio= " + precio + '.';
+        return "Tipo: " + tipo + ", Precio: $" + precio + '.';
     }
     
     

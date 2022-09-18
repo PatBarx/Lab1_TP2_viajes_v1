@@ -33,7 +33,8 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return ": " + "marca=" + marca + ", patente=" + patente + ", combustible=" + combustible + '.';
+        return ": " + " -Marca: " + marca + ", -Patente: " + patente + "\n-Combustible " + combustible + 
+                "\n";
     }
     
     public abstract double calcularCosto();

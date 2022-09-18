@@ -38,10 +38,10 @@ public class Auto extends Vehiculo{
         return r;
     }
 
-    @Override
-    public String toString() {
-        return "Auto: " + '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Auto: " + '}';
+//    }
      
     
     
